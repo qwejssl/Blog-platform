@@ -1,0 +1,272 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a { 
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header {
+    padding: 50px 0 ;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu_list {
+    display: flex;
+    gap: 25px;
+}
+
+.logo {
+    margin-right: 150px;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.menu_end {
+    position: absolute;
+    right: 0;
+}
+
+.change_hover {
+    padding: 5px 10px;
+}
+
+.change_hover:hover {
+    background-color: #efefef;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.button{
+    background-color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#log_in {
+    color: #59179f;
+}
+
+#get_started {
+    padding: 10px 15px;
+    background-color: #59179f;
+    color: #fff;
+}
+
+.border{
+    margin-top: 20px;
+    border: 1px solid #efefef;
+}
+
+
+
+.blog_menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog_menu-item {
+    max-width: 400px;
+}
+
+.blog_item-img {
+    max-width: 400px;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.blog_item-title {
+    font-size: 18px;
+}
+
+.blog_item-shorttext {
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+.module {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s;
+}
+
+.module_container {
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 1200px;
+    min-height: 790px;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    margin: 30px 15px;
+    transform: scale(0);
+    transition: transform .8s;
+}
+
+.module.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.module.open .module_container {
+    transform: scale(1);
+}
+
+
+.close_btn {
+    background-color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px;
+
+}
+
+.close_btn:hover {
+    background-color: #959595;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+.article_img {
+    font-size: 20px;
+}
+
+.article_title {
+    font-size: 20px;
+    margin-top: 30px;
+}
+.article_main-text {
+    font-size: 20px;
+    margin-top: 50px;
+}
+.article_short-text {
+    font-size: 20px;
+    margin-top: 30px;
+}
+.submit_btn {
+    background-color: #59179f;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.article_title-input {
+    margin-top: 10px;
+    padding: 20px 20px;
+    width: 1000px;
+    font-size: 20px;
+    font-weight: 700;
+    color: inherit;
+    border-radius: 10px;
+    border: 0.5px solid #000;
+}
+
+.article_title-input::placeholder {
+    font-size: 20px;
+    font-weight: 700;
+    color: inherit;
+}
+
+.article_main-text-input {
+    margin-top: 10px;
+    padding: 20px 20px;
+    width: 1000px;
+    font-size: 20px;
+    font-weight: 700;
+    color: inherit;
+    border-radius: 10px;
+    min-height: 150px;
+}
+
+.article_main-text-input::placeholder {
+    font-size: 20px;
+    font-weight: 700;
+    color: inherit;
+}
+
+
+.article_short-text-input {
+    margin-top: 10px;
+    padding: 20px 20px;
+    width: 1000px;
+    font-size: 20px;
+    font-weight: 700;
+    color: inherit;
+    border-radius: 10px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.article_short-text-input::placeholder {
+    font-size: 20px;
+    font-weight: 700;
+    color: inherit;
+}
